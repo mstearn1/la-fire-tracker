@@ -6,7 +6,7 @@ import streamlit as st
 FIRE_API_URL = "https://data.lacity.org/resource/3rp3-6znj.json"
 
 st.set_page_config(page_title="LA Fire Incident Tracker", layout="wide")
-st.title("\ud83d\udd25 Los Angeles Fire Incident Tracker")
+st.title("Los Angeles Fire Incident Tracker")
 
 @st.cache_data(show_spinner=False)
 def get_fire_data(start_date, end_date):
